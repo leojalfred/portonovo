@@ -1,17 +1,17 @@
 import type { Metadata } from 'next'
-import { Courier_Prime, Gloria_Hallelujah } from 'next/font/google'
+import { Lora, Pixelify_Sans } from 'next/font/google'
 import './globals.css'
 
-const gloriaHallelujah = Gloria_Hallelujah({
-  variable: '--font-gloria-hallelujah',
-  subsets: ['latin'],
-  weight: ['400'],
-})
-
-const courierPrime = Courier_Prime({
-  variable: '--font-courier-prime',
+const pixelify = Pixelify_Sans({
+  variable: '--font-pixelify',
   subsets: ['latin'],
   weight: ['400', '700'],
+})
+
+const lora = Lora({
+  variable: '--font-lora',
+  subsets: ['latin'],
+  weight: ['400'],
 })
 
 export const metadata: Metadata = {
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${gloriaHallelujah.variable} ${courierPrime.variable} antialiased`}
-      >
+      <body className={`${lora.variable} ${pixelify.variable} antialiased`}>
         {children}
       </body>
     </html>

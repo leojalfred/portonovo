@@ -12,6 +12,10 @@ export default {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      fontFamily: {
+        lora: ['var(--font-lora)'],
+        pixelify: ['var(--font-pixelify)'],
+      },
     },
   },
   plugins: [],
